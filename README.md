@@ -9,7 +9,7 @@ function setBaseline() {
     var plannedEndDate = data[i][2];
     
     // Only set the baseline if it is currently empty
-    if (!data[i][3] && !data[i][4]) {
+      if (!data[i][3] && !data[i][4]) {
       sheet.getRange(i + 1, 4).setValue(plannedStartDate);
       sheet.getRange(i + 1, 5).setValue(plannedEndDate);
     }
